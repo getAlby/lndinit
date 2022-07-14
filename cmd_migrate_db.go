@@ -447,6 +447,7 @@ func openDb(cfg *DB, prefix string) (walletdb.DB, error) {
 			},
 			prefix,
 		}
+		postgres.Init(5)
 		log("Opening postgres backend at %s with prefix '%s'",
 			cfg.Postgres.Dsn, prefix)
 
