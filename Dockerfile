@@ -12,7 +12,7 @@ ENV GODEBUG netdns=cgo
 # be built from a specified Git state. The default image will use the Git tip of
 # main by default.
 ARG checkout="migrate-db"
-ARG git_url="https://github.com/lightninglabs/lndinit"
+ARG git_url="https://github.com/getAlby/lndinit"
 
 # Install dependencies and build the binaries.
 RUN apk add --no-cache --update alpine-sdk \
