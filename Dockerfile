@@ -18,8 +18,8 @@ ARG git_url="https://github.com/lightninglabs/lndinit"
 RUN apk add --no-cache --update alpine-sdk \
   git \
   make \
-&&  git clone $git_url /go/src/github.com/lightninglabs/lndinit \
-&&  cd /go/src/github.com/lightninglabs/lndinit \
+&&  git clone $git_url /go/src/github.com/getAlby/lndinit \
+&&  cd /go/src/github.com/getAlby/lndinit \
 &&  git checkout $checkout \
 &&  make release-install
 
